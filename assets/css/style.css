@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.homepage {
+    position: relative;
+    height: 100vh;
+}
+.homepage-head {
+    background-image: linear-gradient(yellow, red);
+    height: auto;
+}
+.homepage-head-menus {
+  width: 100%;
+}
+
+.homepage-head-menus ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.homepage-head-menus li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.homepage-head-menus .menu {
+  clear: both;
+  max-height: 0;
+  
+}
+
+.homepage-head-menus .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.homepage-head-menus .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.homepage-head-menus .menu-icon .navicon:before,
+.homepage-head-menus .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.homepage-head-menus .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.homepage-head-menus .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.homepage-head-menus .menu-btn {
+  display: none;
+}
+
+.homepage-head-menus .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.homepage-head-menus .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.homepage-head-menus .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.homepage-head-menus .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.homepage-head-menus .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.homepage-head-menus .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .homepage-head-menus li {
+    float: left;
+  }
+  .homepage-head-menus li a {
+    padding: 20px 30px;
+  }
+  .homepage-head-menus .menu {
+    clear: none;
+    display: flex;
+    justify-content: center;
+    max-height: none;
+  }
+  .homepage-head-menus .menu-icon {
+    display: none;
+  }
+}
+  .homepage-head-inside {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .side {
+      display: flex;
+  }
+
+  .side {
+      width: 33.333333%;
+  }
+  .clock {
+    width: 33.333333%;
+    display: flex;
+    justify-content: center;
+}
+.clock .time {
+  color:white;
+}
+.baterys {
+    width: 33.333333%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.battery {
+    border: 3px solid rgb(109, 101, 101);
+    width: 17px;
+    height: 3px;
+    padding: 2px;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 4px;
+  }
+  .battery:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px solid rgb(109, 101, 101);
+    border-radius: 2px;
+  }
+
+  .battery-level {
+    background: #fff;  
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }  
+
+  .dot {
+    display: flex;
+    align-items: center;
+  }
+  .dot .text {
+    color: white;
+  }
+  .dot-1, .dot-2, .dot-3, .dot-4, .dot-5 {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      margin-right: 2px;
+      background-color: #fff;
+      
+  }
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+.content {
+  margin-top: -100px!important;
+}
+.content-wrap {
+  margin-top: 0!important;
+}
+.content {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.75);
+}
+
+  .head-text {
+    text-align: center;
+    font-size: 34px;
+    color: #ffa700;
+  }
+  .content-match {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .match-numb {
+    width: 33.333333%;
+    text-align: center;
+    padding:12px;
+  }
+  .match-numb img {
+    max-width: 130px;
+    width: 100%;
+    max-height: 130px;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+  .skor {
+    font-size: 32px;
+  }
+
+.match {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  padding-top: 12px;
+}

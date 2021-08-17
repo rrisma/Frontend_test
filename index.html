@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="homepage">
+        <div class="homepage-head">
+            <div class="homepage-head-inside">
+                <div class="side">
+                    <div class="dot">
+                        <span class="dot-1"></span>
+                        <span class="dot-2"></span>
+                        <span class="dot-3"></span>
+                        <span class="dot-4"></span>
+                        <span class="dot-5"></span>
+                        <span class="text">Carrier</span>
+                    </div>
+                </div>
+                <div class="clock">
+                    <span class="time">9:34 AM</span>
+                </div>
+                <div class="baterys">
+                    <span class="text">100%</span>
+                    <div class="battery">
+                        <div class="battery-level" style="height:100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="homepage-head-menus">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="#Matches">Matches</a></li>
+                    <li><a href="#Semi">Semi Final</a></li>
+                    <li><a href="#Final">Final</a></li>
+                    <li><a href="#Profile">Profile</a></li>
+                </ul>
+            </div>
+            <h5 class="match">Matches</h5>
+        </div>
+        <div id="Matches">
+            <div class="content">
+            
+                <div class="content-page">
+                    <div class="content-page-inside">
+                        <h5 class="head-text">26 Juni 2021</h5>
+                        <div class="content-match">
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/LaOvu-pyRqRso6uzff55XA_96x96.png" alt="" class="images">
+                                <p class="text">Denmark</p>
+                            </div>
+                            <div class="match-numb">
+                                <span class="skor">4 - 0</span>
+                            </div>
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/1JjnDm6Es30LryHzbudyEw_96x96.png" alt="" class="images">
+                                <p class="text">Wales</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="content content-wrap">
+                <div class="content-page">
+                    <div class="content-page-inside">
+                        <h5 class="head-text">26 Juni 2021</h5>
+                        <div class="content-match">
+                            <div class="match-numb">
+                                <img src="data:image/png;base64,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" alt="" class="images">
+                                <p class="text">Italy</p>
+                            </div>
+                            <div class="match-numb">
+                                <span class="skor">2 - 1</span>
+                            </div>
+                            <div class="match-numb">
+                                <img src="data:image/png;base64,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" alt="" class="images">
+                                <p class="text">Austria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Semi">
+            <div class="content content-wrap">
+            
+                <div class="content-page">
+                    <div class="content-page-inside">
+                        <h5 class="head-text">2 Juli 2021</h5>
+                        <div class="content-match">
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/1hy9ek4dOIffYULM6k1fqg_96x96.png" alt="" class="images">
+                                <p class="text">Switzerland</p>
+                            </div>
+                            <div class="match-numb">
+                                <span class="skor">1 - 1</span>
+                            </div>
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_96x96.png" alt="" class="images">
+                                <p class="text">Spain</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="content content-wrap">
+                <div class="content-page">
+                    <div class="content-page-inside">
+                        <h5 class="head-text">2 Juli 2021</h5>
+                        <div class="content-match">
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/6SF7yEoB60bU5knw-M7R5Q_96x96.png" alt="" class="images">
+                                <p class="text">Belgium</p>
+                            </div>
+                            <div class="match-numb">
+                                <span class="skor">1 - 2</span>
+                            </div>
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/joYpsiaYi4GDCqhSRAq5Zg_96x96.png" alt="" class="images">
+                                <p class="text">Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Final">
+            <div class="content content-wrap">
+            
+                <div class="content-page">
+                    <div class="content-page-inside">
+                        <h5 class="head-text">11 Juli 2021</h5>
+                        <div class="content-match">
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/joYpsiaYi4GDCqhSRAq5Zg_96x96.png" alt="" class="images">
+                                <p class="text">Italy</p>
+                            </div>
+                            <div class="match-numb">
+                                <span class="skor">3 - 2</span>
+                            </div>
+                            <div class="match-numb">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_96x96.png" alt="" class="images">
+                                <p class="text">England</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
